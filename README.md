@@ -1,5 +1,7 @@
 # FyleTaskFrontend
 
+Pull this repository and run npm install and then ng serve --open to successfully run the application.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
 
 ## Development server
