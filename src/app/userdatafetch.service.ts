@@ -19,7 +19,7 @@ export class UserdatafetchService {
   constructor(private http: HttpClient) { }
   fetchUserDetails(user: string): void {
     this.loading = true;
-      this.http.get<UserInfo[]>(`http://localhost:8000/user/api/user/${user}`).subscribe(data => {
+      this.http.get<UserInfo[]>(`https://fyletask16012023.pythonanywhere.com/user/api/user/${user}`).subscribe(data => {
         console.log(data,'data')
         this.loading= false;
       this.userDetail = data;
