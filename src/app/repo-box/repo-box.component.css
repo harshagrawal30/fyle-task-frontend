@@ -1,0 +1,36 @@
+#repoContainer{
+    border: 1px solid;
+    background-color:ghostwhite;
+    max-width: min(1000px,90vw);
+    height: 100%;
+    width: 40vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+#tagContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#tagButton{
+    margin: 10px;
+    height: 35px;
+    background-color: skyblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 700;
+}
+@media (max-width:780px){
+    #RepoContainer{
+        width: 80vw;
+    }
+}

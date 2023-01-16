@@ -1,0 +1,60 @@
+#userDetailContainer{
+    display: flex;
+    width: 90vw;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#userDetailBox{
+    margin-left: 70px;
+}
+
+#githuburl{
+    font-weight: 500;
+    margin-left: 10px;
+}
+#errorDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+#reposBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+}
+
+@media (max-width: 480px){
+    #userDetailContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    #userDetailBox{
+        margin-left: 0px;
+    }
+    #reposBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+}

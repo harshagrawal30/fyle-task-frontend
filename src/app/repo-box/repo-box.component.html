@@ -1,0 +1,12 @@
+
+
+
+<div id="repoContainer" *ngIf="repository">
+<h2>{{repository.name}}</h2>
+<p>{{repository.description}}</p>
+<div id="tagContainer">
+<div *ngFor="let lang of repository.repository_language">
+<button id="tagButton">{{lang}}</button>
+</div>
+</div>
+</div>

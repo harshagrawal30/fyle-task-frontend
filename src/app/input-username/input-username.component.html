@@ -1,0 +1,7 @@
+<div id="inputContainer" *ngIf='username'>
+    <div id="inputBox">
+    <label for="username">Enter Username: </label>
+    <input id="username" [(ngModel)] = "username.userName" placeholder="username">
+    </div>
+    <button *ngIf="username.userName.length" type="submit" (click)="func()">Enter</button>
+</div>
