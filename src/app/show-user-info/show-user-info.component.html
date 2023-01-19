@@ -32,6 +32,6 @@
 <div id="errorDiv"  *ngIf="dataservice.userDetail.length  && dataservice.userDetail[0].status === 'notfound'">
     User not Found
 </div>
-<div id="errorDiv" *ngIf="dataservice.userDetail.length  && dataservice.userDetail[0].status === 'error'">
-    Something Went Wrong, Try Again
+<div id="errorDiv" *ngIf="dataservice.userDetail.length  && dataservice.userDetail[0].status === 'apilimit' || dataservice.userDetail[0].status === 'error'">
+    Something Went Wrong or API Limit, Try Again after sometime
 </div>
